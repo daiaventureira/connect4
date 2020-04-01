@@ -74,16 +74,16 @@ class Design extends React.Component{
     getPos(arr){
         for (let i = 0; i < arr.length; i++){
             if(arr[i]=== 1 && arr[i+1] ===1 && arr[i+2]=== 1 && arr[i+3]===1){
-                return alert("pink is the winner")
+                alert("pink is the winner");
+                return window.location.reload();   
             }
-
             if(arr[i]=== 2 && arr[i+1] ===2 && arr[i+2]=== 2 && arr[i+3]===2){
-                return alert("yellow is the winner");
-
+                alert("yellow is the winner");
+                return window.location.reload();
             }
-
         }
-            return -1;
+        return -1;
+
     }
 
     selectColumn(contador, i){  
