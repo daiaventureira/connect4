@@ -12,7 +12,11 @@ class Design extends React.Component{
         this.checkWinner = this.checkWinner.bind(this);
     }
 
-    
+    declareWinner(x){
+        alert(x + "is the winner");
+        return window.location.reload();
+
+    }
 
     componentDidUpdate(){
         this.checkWinner();
@@ -35,7 +39,7 @@ class Design extends React.Component{
                 }
                 
                 if(this.getPos(temp) !== -1) {
-                    return this.getPos(temp);
+                    return this.declareWinner(this.getPos(temp));
                 }
             }
         }
@@ -48,14 +52,14 @@ class Design extends React.Component{
                     temp.push(arr[i][j]);
                 }
                 if(this.getPos(temp) !== -1) {
-                    return this.getPos(temp);
+                    return this.declareWinner(this.getPos(temp));
                 }
             }
         }
 
         for(let i = 0; i < lines; i++) {
             if(this.getPos(arr[i]) !== -1) {
-                return this.getPos(arr[i]);
+                return this.declareWinner(this.getPos(arr[i]));
             }
         }
 
@@ -65,7 +69,7 @@ class Design extends React.Component{
                 column.push(arr[i][k]);
             }
             if(this.getPos(column) !== -1) {
-                return this.getPos(column);
+                return this.declareWinner(this.getPos(column));
             }
         }  
           return -1;
@@ -74,12 +78,10 @@ class Design extends React.Component{
     getPos(arr){
         for (let i = 0; i < arr.length; i++){
             if(arr[i]=== 1 && arr[i+1] ===1 && arr[i+2]=== 1 && arr[i+3]===1){
-                alert("pink is the winner");
-                return window.location.reload();   
+              return "pink"  
             }
             if(arr[i]=== 2 && arr[i+1] ===2 && arr[i+2]=== 2 && arr[i+3]===2){
-                alert("yellow is the winner");
-                return window.location.reload();
+              return "yellow";
             }
         }
         return -1;
