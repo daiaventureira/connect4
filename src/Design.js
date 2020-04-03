@@ -108,8 +108,8 @@ class Design extends React.Component{
 
     render(){   
              
-        var array = [];
-        for(var i = 0; i<=6; i++){  
+        let array = [];
+        for(let i = 0; i<=6; i++){  
             array.push(< Column column={this.state.board[i]} selectColumn={this.selectColumn} index={i}/>)    
         }
        
