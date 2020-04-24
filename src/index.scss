@@ -12,6 +12,7 @@ body{
     height: 100%;
     background-image: url(/assets/texture.png), linear-gradient(-135deg ,  rgba(0,0,0,1)  0%,  rgba(53,92,125,1) 100%);
 }
+
 .container{
     width: 540px;
     height: 450px;
@@ -26,6 +27,7 @@ body{
     border-radius: 10px;
 
 }
+
 .container.player{
     position: relative;
     background-color: #ffffff;
@@ -33,24 +35,30 @@ body{
     height: 70px;
     border-radius: 45px;
 }
+
 .player.pink{
     background-color:#eca0b6;
 }
+
 .player.yellow{
     background-color: #fafba4;
 }
+
 .column:hover{
     background-color: #a1e6e3;
 }
+
 .container.column{
     display: flex;
     flex-direction: column;
 }
+
 .board{
     display: flex;
     justify-content: center;
     align-items:center;
 }
+
 .tittleGame{
     font-family:'Londrina Shadow', cursive;
     color:  #fafba4;
@@ -58,6 +66,4 @@ body{
     text-align: center;
     padding-top: 10px;
 }
-.layout{
-    
-}
+

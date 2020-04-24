@@ -15,7 +15,6 @@ class Design extends React.Component{
     declareWinner(x){
         alert(x + "is the winner");
         return window.location.reload();
-
     }
 
     componentDidUpdate(){
@@ -27,17 +26,15 @@ class Design extends React.Component{
         let lines = arr.length; 
         let cols = arr[0].length;
         let maxLength = Math.max(cols, lines);
-
         let temp;
+
         for (let k = 0; k <= 2 * (maxLength - 1); ++k) {
             temp = [];
             for (let i = lines - 1; i >= 0; --i) {
                 let j = k - i;
-
                 if (j >= 0 && j < cols) {
                     temp.push(arr[i][j]);
-                }
-                
+                } 
                 if(this.getPos(temp) !== -1) {
                     return this.declareWinner(this.getPos(temp));
                 }
@@ -78,28 +75,27 @@ class Design extends React.Component{
     getPos(arr){
         for (let i = 0; i < arr.length; i++){
             if(arr[i]=== 1 && arr[i+1] ===1 && arr[i+2]=== 1 && arr[i+3]===1){
-              return "pink"  
+                return "pink"  
             }
             if(arr[i]=== 2 && arr[i+1] ===2 && arr[i+2]=== 2 && arr[i+3]===2){
-              return "yellow";
+                return "yellow";
             }
         }
         return -1;
-
     }
 
-    selectColumn(contador, i){  
-        
+    selectColumn(contador, i){   
         if(contador === 0){
             return;          
         }
         const temp = [...this.state.board];
-        
+
         if(this.state.counter%2 === 0){
             temp[i][contador-1] = 1
         }else{
             temp[i][contador-1] = 2
-        }  
+        } 
+
         this.setState({
             board: temp,
             counter: Math.max(this.state.counter+1)
@@ -114,8 +110,8 @@ class Design extends React.Component{
         }
        
         return(
-             <div className="container board"> 
-             {array} 
+            <div className="container board"> 
+                {array} 
             </div>
         );     
 }
