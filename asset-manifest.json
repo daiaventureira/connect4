@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/connect4/static/css/main.637b5b89.chunk.css",
+    "main.css": "/connect4/static/css/main.66787c2c.chunk.css",
     "main.js": "/connect4/static/js/main.e8fe34cb.chunk.js",
     "main.js.map": "/connect4/static/js/main.e8fe34cb.chunk.js.map",
     "runtime-main.js": "/connect4/static/js/runtime-main.7582eb53.js",
@@ -8,16 +8,16 @@
     "static/js/2.2e01df23.chunk.js": "/connect4/static/js/2.2e01df23.chunk.js",
     "static/js/2.2e01df23.chunk.js.map": "/connect4/static/js/2.2e01df23.chunk.js.map",
     "index.html": "/connect4/index.html",
-    "precache-manifest.a2b7df7f8326bdc9986f93249cd40aa6.js": "/connect4/precache-manifest.a2b7df7f8326bdc9986f93249cd40aa6.js",
+    "precache-manifest.5f3759231876f9b465f63a69b467a610.js": "/connect4/precache-manifest.5f3759231876f9b465f63a69b467a610.js",
     "service-worker.js": "/connect4/service-worker.js",
-    "static/css/main.637b5b89.chunk.css.map": "/connect4/static/css/main.637b5b89.chunk.css.map",
+    "static/css/main.66787c2c.chunk.css.map": "/connect4/static/css/main.66787c2c.chunk.css.map",
     "static/js/2.2e01df23.chunk.js.LICENSE.txt": "/connect4/static/js/2.2e01df23.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/connect4/static/media/texture.2b3cf373.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7582eb53.js",
     "static/js/2.2e01df23.chunk.js",
-    "static/css/main.637b5b89.chunk.css",
+    "static/css/main.66787c2c.chunk.css",
     "static/js/main.e8fe34cb.chunk.js"
   ]
 }
