@@ -95,7 +95,6 @@ class Design extends React.Component{
         }else{
             temp[i][contador-1] = 2
         } 
-
         this.setState({
             board: temp,
             counter: Math.max(this.state.counter+1)
@@ -103,7 +102,6 @@ class Design extends React.Component{
     }
 
     render(){   
-             
         let array = [];
         for(let i = 0; i<=6; i++){  
             array.push(< Column column={this.state.board[i]} selectColumn={this.selectColumn} index={i}/>)    
